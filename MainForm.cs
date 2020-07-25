@@ -950,6 +950,7 @@ namespace ImageEnhancingUtility.Winforms
             button_previewSaveComparison.Enabled = enabled;
             previewSave_button.Enabled = enabled;
             previewSaveOutputFormat_button.Enabled = enabled;
+            button_refreshModels.Enabled = enabled;
         }
 
         #endregion

@@ -69,7 +69,7 @@ namespace ImageEnhancingUtility.Winforms
             this.previewSave_button = new System.Windows.Forms.Button();
             this.button_previewSaveComparison = new System.Windows.Forms.Button();
             this.previewSaveOutputFormat_button = new System.Windows.Forms.Button();
-            this.refreshModels = new System.Windows.Forms.Button();
+            this.button_refreshModels = new System.Windows.Forms.Button();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.openFromFileToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
@@ -806,12 +806,12 @@ namespace ImageEnhancingUtility.Winforms
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.84026F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.15974F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tableLayoutPanel6.Controls.Add(this.previewUpdate_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.previewSave_button, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.button_previewSaveComparison, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.previewSaveOutputFormat_button, 2, 0);
-            this.tableLayoutPanel6.Controls.Add(this.refreshModels, 3, 0);
+            this.tableLayoutPanel6.Controls.Add(this.button_refreshModels, 3, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(501, 576);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -829,7 +829,7 @@ namespace ImageEnhancingUtility.Winforms
             this.previewUpdate_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.previewUpdate_button.Location = new System.Drawing.Point(3, 3);
             this.previewUpdate_button.Name = "previewUpdate_button";
-            this.previewUpdate_button.Size = new System.Drawing.Size(109, 53);
+            this.previewUpdate_button.Size = new System.Drawing.Size(108, 53);
             this.previewUpdate_button.TabIndex = 6;
             this.previewUpdate_button.Text = "Update preview";
             this.previewUpdate_button.UseVisualStyleBackColor = true;
@@ -839,7 +839,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.previewSave_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSave_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSave_button.Location = new System.Drawing.Point(118, 3);
+            this.previewSave_button.Location = new System.Drawing.Point(117, 3);
             this.previewSave_button.Name = "previewSave_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSave_button, 2);
             this.previewSave_button.Size = new System.Drawing.Size(109, 112);
@@ -854,7 +854,7 @@ namespace ImageEnhancingUtility.Winforms
             this.button_previewSaveComparison.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_previewSaveComparison.Location = new System.Drawing.Point(3, 62);
             this.button_previewSaveComparison.Name = "button_previewSaveComparison";
-            this.button_previewSaveComparison.Size = new System.Drawing.Size(109, 53);
+            this.button_previewSaveComparison.Size = new System.Drawing.Size(108, 53);
             this.button_previewSaveComparison.TabIndex = 7;
             this.button_previewSaveComparison.Text = "Save comparison to clipboard";
             this.button_previewSaveComparison.UseVisualStyleBackColor = true;
@@ -864,7 +864,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.previewSaveOutputFormat_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSaveOutputFormat_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(233, 3);
+            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(232, 3);
             this.previewSaveOutputFormat_button.Name = "previewSaveOutputFormat_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSaveOutputFormat_button, 2);
             this.previewSaveOutputFormat_button.Size = new System.Drawing.Size(115, 112);
@@ -875,15 +875,15 @@ namespace ImageEnhancingUtility.Winforms
             // 
             // refreshModels
             // 
-            this.refreshModels.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.refreshModels.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.refreshModels.Location = new System.Drawing.Point(354, 3);
-            this.refreshModels.Name = "refreshModels";
-            this.refreshModels.Size = new System.Drawing.Size(135, 53);
-            this.refreshModels.TabIndex = 10;
-            this.refreshModels.Text = "Refresh models";
-            this.refreshModels.UseVisualStyleBackColor = true;
-            this.refreshModels.Click += new System.EventHandler(this.refreshModels_Click);
+            this.button_refreshModels.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_refreshModels.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button_refreshModels.Location = new System.Drawing.Point(353, 3);
+            this.button_refreshModels.Name = "refreshModels";
+            this.button_refreshModels.Size = new System.Drawing.Size(136, 53);
+            this.button_refreshModels.TabIndex = 10;
+            this.button_refreshModels.Text = "Refresh models";
+            this.button_refreshModels.UseVisualStyleBackColor = true;
+            this.button_refreshModels.Click += new System.EventHandler(this.refreshModels_Click);
             // 
             // toolStrip
             // 
@@ -3759,7 +3759,7 @@ namespace ImageEnhancingUtility.Winforms
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.CheckBox autoSetTileSize_checkBox;
         private System.Windows.Forms.CheckBox useImMerge_checkBox;
-        private System.Windows.Forms.Button refreshModels;
+        private System.Windows.Forms.Button button_refreshModels;
     }
 }
 
