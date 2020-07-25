@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
@@ -747,7 +747,7 @@ namespace ImageEnhancingUtility.Winforms
 
             foreach (int level in ZoomLevelCollection.Default)
             {
-                if (level > minimumZoom && level <= 600)
+                if (level > minimumZoom && level <= 800)
                 {
                     levels.Add(level);
                 }
