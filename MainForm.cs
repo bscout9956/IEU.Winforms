@@ -21,6 +21,7 @@ using ReactiveUI;
 using Tulpep.NotificationWindow;
 using Rule = ImageEnhancingUtility.Core.Rule;
 using Newtonsoft.Json;
+using ImageEnhancingUtility.Winforms.Properties;
 
 //TODO:
 //ask to change all paths when changing ESRGAN path
@@ -1761,6 +1762,36 @@ namespace ImageEnhancingUtility.Winforms
         private void comparison_colorWheel_ColorChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox_darkMode_CheckedChanged(object sender, EventArgs e)
+        {
+            if (darkModeCheckbox.Checked)
+            {
+                advanced_tabPage.BackColor = Color.FromArgb(64, 64, 64);
+                interpolation_tabPage.BackColor = Color.FromArgb(64, 64, 64);
+                tableLayoutPanel1.BackColor = Color.FromArgb(64, 64, 64);
+                tableLayoutPanel2.BackColor = Color.FromArgb(64, 64, 64);
+                tableLayoutPanel3.BackColor = Color.FromArgb(64, 64, 64);
+                tableLayoutPanel4.BackColor = Color.FromArgb(64, 64, 64);
+                tableLayoutPanel5.BackColor = Color.FromArgb(64, 64, 64);
+                tableLayoutPanel6.BackColor = Color.FromArgb(64, 64, 64);
+                settings_tabPage.BackColor = Color.FromArgb(64, 64, 64);
+                settingsOutputFormat_tabPage.BackColor = Color.FromArgb(64, 64, 64);                
+            }
+            else {
+                advanced_tabPage.BackColor = Color.FromName("Control");
+                interpolation_tabPage.BackColor = Color.FromName("Control");
+                tableLayoutPanel1.BackColor = Color.FromName("Control");
+                tableLayoutPanel2.BackColor = Color.FromName("Control");
+                tableLayoutPanel3.BackColor = Color.FromName("Control");
+                tableLayoutPanel4.BackColor = Color.FromName("Control");
+                tableLayoutPanel5.BackColor = Color.FromName("Control");
+                tableLayoutPanel6.BackColor = Color.FromName("Control");
+                settings_tabPage.BackColor = Color.FromName("Control");           
+                settingsOutputFormat_tabPage.BackColor = Color.FromName("Control");
+                
+            }
         }
 
         private void RulePriority_numericUpDown_ValueChanged(object sender, EventArgs e)

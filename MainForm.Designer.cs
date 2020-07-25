@@ -90,6 +90,7 @@ namespace ImageEnhancingUtility.Winforms
             this.useMblend_checkBox = new System.Windows.Forms.CheckBox();
             this.balanceAlphas_checkBox = new System.Windows.Forms.CheckBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.darkModeCheckbox = new System.Windows.Forms.CheckBox();
             this.topMost_checkBox = new System.Windows.Forms.CheckBox();
             this.showDebugInfo_checkBox = new System.Windows.Forms.CheckBox();
             this.showPopups_checkBox = new System.Windows.Forms.CheckBox();
@@ -647,6 +648,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             // previewResult_tabPage
             // 
+            this.previewResult_tabPage.BackColor = System.Drawing.SystemColors.Control;
             this.previewResult_tabPage.Controls.Add(this.tableLayoutPanel3);
             this.previewResult_tabPage.Controls.Add(this.toolStrip);
             this.previewResult_tabPage.Location = new System.Drawing.Point(4, 25);
@@ -654,10 +656,10 @@ namespace ImageEnhancingUtility.Winforms
             this.previewResult_tabPage.Size = new System.Drawing.Size(996, 752);
             this.previewResult_tabPage.TabIndex = 5;
             this.previewResult_tabPage.Text = "Preview result";
-            this.previewResult_tabPage.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -806,7 +808,7 @@ namespace ImageEnhancingUtility.Winforms
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.84026F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.15974F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
             this.tableLayoutPanel6.Controls.Add(this.previewUpdate_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.previewSave_button, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.button_previewSaveComparison, 0, 1);
@@ -829,7 +831,7 @@ namespace ImageEnhancingUtility.Winforms
             this.previewUpdate_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.previewUpdate_button.Location = new System.Drawing.Point(3, 3);
             this.previewUpdate_button.Name = "previewUpdate_button";
-            this.previewUpdate_button.Size = new System.Drawing.Size(108, 53);
+            this.previewUpdate_button.Size = new System.Drawing.Size(102, 53);
             this.previewUpdate_button.TabIndex = 6;
             this.previewUpdate_button.Text = "Update preview";
             this.previewUpdate_button.UseVisualStyleBackColor = true;
@@ -839,10 +841,10 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.previewSave_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSave_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSave_button.Location = new System.Drawing.Point(117, 3);
+            this.previewSave_button.Location = new System.Drawing.Point(111, 3);
             this.previewSave_button.Name = "previewSave_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSave_button, 2);
-            this.previewSave_button.Size = new System.Drawing.Size(109, 112);
+            this.previewSave_button.Size = new System.Drawing.Size(103, 112);
             this.previewSave_button.TabIndex = 6;
             this.previewSave_button.Text = "Enhance and save as png";
             this.previewSave_button.UseVisualStyleBackColor = true;
@@ -854,7 +856,7 @@ namespace ImageEnhancingUtility.Winforms
             this.button_previewSaveComparison.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_previewSaveComparison.Location = new System.Drawing.Point(3, 62);
             this.button_previewSaveComparison.Name = "button_previewSaveComparison";
-            this.button_previewSaveComparison.Size = new System.Drawing.Size(108, 53);
+            this.button_previewSaveComparison.Size = new System.Drawing.Size(102, 53);
             this.button_previewSaveComparison.TabIndex = 7;
             this.button_previewSaveComparison.Text = "Save comparison to clipboard";
             this.button_previewSaveComparison.UseVisualStyleBackColor = true;
@@ -864,7 +866,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.previewSaveOutputFormat_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSaveOutputFormat_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(232, 3);
+            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(220, 3);
             this.previewSaveOutputFormat_button.Name = "previewSaveOutputFormat_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSaveOutputFormat_button, 2);
             this.previewSaveOutputFormat_button.Size = new System.Drawing.Size(115, 112);
@@ -873,13 +875,13 @@ namespace ImageEnhancingUtility.Winforms
             this.previewSaveOutputFormat_button.UseVisualStyleBackColor = true;
             this.previewSaveOutputFormat_button.Click += new System.EventHandler(this.previewSaveOutputFormat_button_Click);
             // 
-            // refreshModels
+            // button_refreshModels
             // 
             this.button_refreshModels.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_refreshModels.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_refreshModels.Location = new System.Drawing.Point(353, 3);
-            this.button_refreshModels.Name = "refreshModels";
-            this.button_refreshModels.Size = new System.Drawing.Size(136, 53);
+            this.button_refreshModels.Location = new System.Drawing.Point(341, 3);
+            this.button_refreshModels.Name = "button_refreshModels";
+            this.button_refreshModels.Size = new System.Drawing.Size(148, 53);
             this.button_refreshModels.TabIndex = 10;
             this.button_refreshModels.Text = "Refresh models";
             this.button_refreshModels.UseVisualStyleBackColor = true;
@@ -959,6 +961,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             // settings_tabPage
             // 
+            this.settings_tabPage.BackColor = System.Drawing.SystemColors.Control;
             this.settings_tabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.settings_tabPage.Controls.Add(this.label34);
             this.settings_tabPage.Controls.Add(this.montorVram_checkBox);
@@ -1015,7 +1018,6 @@ namespace ImageEnhancingUtility.Winforms
             this.settings_tabPage.Size = new System.Drawing.Size(996, 752);
             this.settings_tabPage.TabIndex = 1;
             this.settings_tabPage.Text = "Settings";
-            this.settings_tabPage.UseVisualStyleBackColor = true;
             // 
             // label34
             // 
@@ -1135,22 +1137,35 @@ namespace ImageEnhancingUtility.Winforms
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.darkModeCheckbox);
             this.groupBox8.Controls.Add(this.topMost_checkBox);
             this.groupBox8.Controls.Add(this.showDebugInfo_checkBox);
             this.groupBox8.Controls.Add(this.showPopups_checkBox);
-            this.groupBox8.Location = new System.Drawing.Point(670, 261);
+            this.groupBox8.Location = new System.Drawing.Point(670, 250);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(158, 92);
+            this.groupBox8.Size = new System.Drawing.Size(158, 103);
             this.groupBox8.TabIndex = 54;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "UI";
+            // 
+            // darkModeCheckbox
+            // 
+            this.darkModeCheckbox.AutoSize = true;
+            this.darkModeCheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.darkModeCheckbox.Location = new System.Drawing.Point(6, 80);
+            this.darkModeCheckbox.Name = "darkModeCheckbox";
+            this.darkModeCheckbox.Size = new System.Drawing.Size(109, 17);
+            this.darkModeCheckbox.TabIndex = 57;
+            this.darkModeCheckbox.Text = "Enable dark mode";
+            this.darkModeCheckbox.UseVisualStyleBackColor = true;
+            this.darkModeCheckbox.CheckedChanged += new System.EventHandler(this.checkBox_darkMode_CheckedChanged);
             // 
             // topMost_checkBox
             // 
             this.topMost_checkBox.AutoSize = true;
             this.topMost_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.topMost_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.topMost_checkBox.Location = new System.Drawing.Point(6, 24);
+            this.topMost_checkBox.Location = new System.Drawing.Point(6, 14);
             this.topMost_checkBox.Name = "topMost_checkBox";
             this.topMost_checkBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.topMost_checkBox.Size = new System.Drawing.Size(77, 17);
@@ -1162,7 +1177,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.showDebugInfo_checkBox.AutoSize = true;
             this.showDebugInfo_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showDebugInfo_checkBox.Location = new System.Drawing.Point(6, 69);
+            this.showDebugInfo_checkBox.Location = new System.Drawing.Point(6, 58);
             this.showDebugInfo_checkBox.Name = "showDebugInfo_checkBox";
             this.showDebugInfo_checkBox.Size = new System.Drawing.Size(103, 17);
             this.showDebugInfo_checkBox.TabIndex = 56;
@@ -1174,7 +1189,7 @@ namespace ImageEnhancingUtility.Winforms
             this.showPopups_checkBox.AutoSize = true;
             this.showPopups_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showPopups_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.showPopups_checkBox.Location = new System.Drawing.Point(6, 47);
+            this.showPopups_checkBox.Location = new System.Drawing.Point(6, 36);
             this.showPopups_checkBox.Name = "showPopups_checkBox";
             this.showPopups_checkBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.showPopups_checkBox.Size = new System.Drawing.Size(142, 17);
@@ -2584,7 +2599,7 @@ namespace ImageEnhancingUtility.Winforms
             this.filters_groupBox.Controls.Add(this.checkBox3);
             this.filters_groupBox.Controls.Add(this.filters_listBox);
             this.filters_groupBox.Controls.Add(this.filtersAlpha_groupBox);
-            this.filters_groupBox.Location = new System.Drawing.Point(0, 3);
+            this.filters_groupBox.Location = new System.Drawing.Point(3, 3);
             this.filters_groupBox.Name = "filters_groupBox";
             this.filters_groupBox.Size = new System.Drawing.Size(537, 631);
             this.filters_groupBox.TabIndex = 32;
@@ -2967,7 +2982,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.modelInterpolationAlphaValue_textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.modelInterpolationAlphaValue_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.modelInterpolationAlphaValue_textBox.Location = new System.Drawing.Point(459, 86);
+            this.modelInterpolationAlphaValue_textBox.Location = new System.Drawing.Point(208, 81);
             this.modelInterpolationAlphaValue_textBox.Name = "modelInterpolationAlphaValue_textBox";
             this.modelInterpolationAlphaValue_textBox.ReadOnly = true;
             this.modelInterpolationAlphaValue_textBox.Size = new System.Drawing.Size(63, 21);
@@ -2994,7 +3009,7 @@ namespace ImageEnhancingUtility.Winforms
             this.interpolationModelOne_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.interpolationModelOne_comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.interpolationModelOne_comboBox.FormattingEnabled = true;
-            this.interpolationModelOne_comboBox.Location = new System.Drawing.Point(25, 68);
+            this.interpolationModelOne_comboBox.Location = new System.Drawing.Point(25, 54);
             this.interpolationModelOne_comboBox.Name = "interpolationModelOne_comboBox";
             this.interpolationModelOne_comboBox.Size = new System.Drawing.Size(428, 21);
             this.interpolationModelOne_comboBox.TabIndex = 0;
@@ -3394,6 +3409,7 @@ namespace ImageEnhancingUtility.Winforms
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1004, 781);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -3760,6 +3776,7 @@ namespace ImageEnhancingUtility.Winforms
         private System.Windows.Forms.CheckBox autoSetTileSize_checkBox;
         private System.Windows.Forms.CheckBox useImMerge_checkBox;
         private System.Windows.Forms.Button button_refreshModels;
+        private System.Windows.Forms.CheckBox darkModeCheckbox;
     }
 }
 
