@@ -1757,6 +1757,11 @@ namespace ImageEnhancingUtility.Winforms
             ViewModel.IEU.CreateModelTree();
         }
 
+        private void comparison_colorWheel_ColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void RulePriority_numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             int newValue = (int)rulePriority_numericUpDown.Value;
