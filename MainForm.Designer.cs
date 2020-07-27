@@ -277,7 +277,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.imageInterpolation_trackBar = new System.Windows.Forms.TrackBar();
             this.train_tabPage = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.basicSRfolder_button = new System.Windows.Forms.Button();
             this.basicSRfolder_textBox = new System.Windows.Forms.TextBox();
             this.basicSRfolder_label = new System.Windows.Forms.Label();
             this.startTraining_button = new System.Windows.Forms.Button();
@@ -286,6 +286,9 @@
             this.refreshModelList = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.basicSRdatasetsFolder_label = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.main_tabPage.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -3349,6 +3352,9 @@
             // train_tabPage
             // 
             this.train_tabPage.Controls.Add(this.button1);
+            this.train_tabPage.Controls.Add(this.basicSRdatasetsFolder_label);
+            this.train_tabPage.Controls.Add(this.textBox3);
+            this.train_tabPage.Controls.Add(this.basicSRfolder_button);
             this.train_tabPage.Controls.Add(this.basicSRfolder_textBox);
             this.train_tabPage.Controls.Add(this.basicSRfolder_label);
             this.train_tabPage.Controls.Add(this.startTraining_button);
@@ -3359,16 +3365,16 @@
             this.train_tabPage.Text = "Train";
             this.train_tabPage.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // basicSRfolder_button
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(543, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 20);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.changePath_button_Click);
+            this.basicSRfolder_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.basicSRfolder_button.Location = new System.Drawing.Point(543, 14);
+            this.basicSRfolder_button.Name = "basicSRfolder_button";
+            this.basicSRfolder_button.Size = new System.Drawing.Size(44, 20);
+            this.basicSRfolder_button.TabIndex = 3;
+            this.basicSRfolder_button.Text = "...";
+            this.basicSRfolder_button.UseVisualStyleBackColor = true;
+            this.basicSRfolder_button.Click += new System.EventHandler(this.changePath_button_Click);
             // 
             // basicSRfolder_textBox
             // 
@@ -3433,6 +3439,35 @@
             this.popupNotifier1.Size = new System.Drawing.Size(400, 100);
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Segoe UI", 9.75F);
             this.popupNotifier1.TitleText = null;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(98, 40);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(439, 20);
+            this.textBox3.TabIndex = 4;
+            // 
+            // basicSRdatasetsFolder_label
+            // 
+            this.basicSRdatasetsFolder_label.AutoSize = true;
+            this.basicSRdatasetsFolder_label.Location = new System.Drawing.Point(8, 43);
+            this.basicSRdatasetsFolder_label.Name = "basicSRdatasetsFolder_label";
+            this.basicSRdatasetsFolder_label.Size = new System.Drawing.Size(84, 13);
+            this.basicSRdatasetsFolder_label.TabIndex = 5;
+            this.basicSRdatasetsFolder_label.Text = "Datasets Folder:";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(543, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 20);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.changePath_button_Click);
             // 
             // MainForm
             // 
@@ -3808,9 +3843,12 @@
         private System.Windows.Forms.CheckBox useImMerge_checkBox;
         private System.Windows.Forms.Button startTraining_button;
         private System.Windows.Forms.TabPage train_tabPage;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button basicSRfolder_button;
         private System.Windows.Forms.TextBox basicSRfolder_textBox;
         private System.Windows.Forms.Label basicSRfolder_label;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label basicSRdatasetsFolder_label;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
