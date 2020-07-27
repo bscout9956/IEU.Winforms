@@ -1752,6 +1752,10 @@ namespace ImageEnhancingUtility.Winforms
             maxTileHeight_numericUpDown.Enabled = maxTileWidth_numericUpDown.Enabled = !autoSetTileSize_checkBox.Checked;
         }
 
+        private void startTraining_button_Click(object sender, EventArgs e)
+        {
+
+        }
         private void RulePriority_numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             int newValue = (int)rulePriority_numericUpDown.Value;
