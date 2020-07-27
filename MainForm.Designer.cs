@@ -276,16 +276,16 @@
             this.label28 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.imageInterpolation_trackBar = new System.Windows.Forms.TrackBar();
+            this.train_tabPage = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.basicSRfolder_textBox = new System.Windows.Forms.TextBox();
+            this.basicSRfolder_label = new System.Windows.Forms.Label();
+            this.startTraining_button = new System.Windows.Forms.Button();
             this.treeView_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openModelFolder = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshModelList = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
-            this.train_tabPage = new System.Windows.Forms.TabPage();
-            this.startTraining_button = new System.Windows.Forms.Button();
-            this.basicSRfolder_label = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.main_tabPage.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -352,8 +352,8 @@
             this.groupBox5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageInterpolation_trackBar)).BeginInit();
-            this.treeView_contextMenuStrip.SuspendLayout();
             this.train_tabPage.SuspendLayout();
+            this.treeView_contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // upscale_button
@@ -811,7 +811,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.84026F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.15974F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
             this.tableLayoutPanel6.Controls.Add(this.previewUpdate_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.previewSave_button, 1, 0);
@@ -833,7 +833,7 @@
             this.previewUpdate_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.previewUpdate_button.Location = new System.Drawing.Point(3, 3);
             this.previewUpdate_button.Name = "previewUpdate_button";
-            this.previewUpdate_button.Size = new System.Drawing.Size(112, 53);
+            this.previewUpdate_button.Size = new System.Drawing.Size(178, 53);
             this.previewUpdate_button.TabIndex = 6;
             this.previewUpdate_button.Text = "Update preview";
             this.previewUpdate_button.UseVisualStyleBackColor = true;
@@ -843,10 +843,10 @@
             // 
             this.previewSave_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSave_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSave_button.Location = new System.Drawing.Point(121, 3);
+            this.previewSave_button.Location = new System.Drawing.Point(187, 3);
             this.previewSave_button.Name = "previewSave_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSave_button, 2);
-            this.previewSave_button.Size = new System.Drawing.Size(113, 112);
+            this.previewSave_button.Size = new System.Drawing.Size(179, 112);
             this.previewSave_button.TabIndex = 6;
             this.previewSave_button.Text = "Enhance and save as png";
             this.previewSave_button.UseVisualStyleBackColor = true;
@@ -858,7 +858,7 @@
             this.button_previewSaveComparison.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_previewSaveComparison.Location = new System.Drawing.Point(3, 62);
             this.button_previewSaveComparison.Name = "button_previewSaveComparison";
-            this.button_previewSaveComparison.Size = new System.Drawing.Size(112, 53);
+            this.button_previewSaveComparison.Size = new System.Drawing.Size(178, 53);
             this.button_previewSaveComparison.TabIndex = 7;
             this.button_previewSaveComparison.Text = "Save comparison to clipboard";
             this.button_previewSaveComparison.UseVisualStyleBackColor = true;
@@ -868,10 +868,10 @@
             // 
             this.previewSaveOutputFormat_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSaveOutputFormat_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(240, 3);
+            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(372, 3);
             this.previewSaveOutputFormat_button.Name = "previewSaveOutputFormat_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSaveOutputFormat_button, 2);
-            this.previewSaveOutputFormat_button.Size = new System.Drawing.Size(249, 112);
+            this.previewSaveOutputFormat_button.Size = new System.Drawing.Size(117, 112);
             this.previewSaveOutputFormat_button.TabIndex = 9;
             this.previewSaveOutputFormat_button.Text = "Enhance and save with ouput format";
             this.previewSaveOutputFormat_button.UseVisualStyleBackColor = true;
@@ -3346,6 +3346,59 @@
             this.imageInterpolation_trackBar.Value = 50;
             this.imageInterpolation_trackBar.Scroll += new System.EventHandler(this.ImageInterpolation_trackBar_Scroll);
             // 
+            // train_tabPage
+            // 
+            this.train_tabPage.Controls.Add(this.button1);
+            this.train_tabPage.Controls.Add(this.basicSRfolder_textBox);
+            this.train_tabPage.Controls.Add(this.basicSRfolder_label);
+            this.train_tabPage.Controls.Add(this.startTraining_button);
+            this.train_tabPage.Location = new System.Drawing.Point(4, 25);
+            this.train_tabPage.Name = "train_tabPage";
+            this.train_tabPage.Size = new System.Drawing.Size(996, 752);
+            this.train_tabPage.TabIndex = 7;
+            this.train_tabPage.Text = "Train";
+            this.train_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(543, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 20);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.changePath_button_Click);
+            // 
+            // basicSRfolder_textBox
+            // 
+            this.basicSRfolder_textBox.Location = new System.Drawing.Point(98, 14);
+            this.basicSRfolder_textBox.Name = "basicSRfolder_textBox";
+            this.basicSRfolder_textBox.ReadOnly = true;
+            this.basicSRfolder_textBox.Size = new System.Drawing.Size(439, 20);
+            this.basicSRfolder_textBox.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.basicSRfolder_textBox, "The directory for the cloned BasicSR training repo");
+            // 
+            // basicSRfolder_label
+            // 
+            this.basicSRfolder_label.AutoSize = true;
+            this.basicSRfolder_label.Location = new System.Drawing.Point(8, 17);
+            this.basicSRfolder_label.Name = "basicSRfolder_label";
+            this.basicSRfolder_label.Size = new System.Drawing.Size(83, 13);
+            this.basicSRfolder_label.TabIndex = 1;
+            this.basicSRfolder_label.Text = "BasicSR Folder:";
+            // 
+            // startTraining_button
+            // 
+            this.startTraining_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.startTraining_button.Location = new System.Drawing.Point(8, 721);
+            this.startTraining_button.Name = "startTraining_button";
+            this.startTraining_button.Size = new System.Drawing.Size(98, 23);
+            this.startTraining_button.TabIndex = 0;
+            this.startTraining_button.Text = "Start Training";
+            this.startTraining_button.UseVisualStyleBackColor = true;
+            this.startTraining_button.Click += new System.EventHandler(this.startTraining_button_Click);
+            // 
             // treeView_contextMenuStrip
             // 
             this.treeView_contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -3380,57 +3433,6 @@
             this.popupNotifier1.Size = new System.Drawing.Size(400, 100);
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Segoe UI", 9.75F);
             this.popupNotifier1.TitleText = null;
-            // 
-            // train_tabPage
-            // 
-            this.train_tabPage.Controls.Add(this.button1);
-            this.train_tabPage.Controls.Add(this.textBox3);
-            this.train_tabPage.Controls.Add(this.basicSRfolder_label);
-            this.train_tabPage.Controls.Add(this.startTraining_button);
-            this.train_tabPage.Location = new System.Drawing.Point(4, 25);
-            this.train_tabPage.Name = "train_tabPage";
-            this.train_tabPage.Size = new System.Drawing.Size(996, 752);
-            this.train_tabPage.TabIndex = 7;
-            this.train_tabPage.Text = "Train";
-            this.train_tabPage.UseVisualStyleBackColor = true;
-            // 
-            // startTraining_button
-            // 
-            this.startTraining_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.startTraining_button.Location = new System.Drawing.Point(8, 721);
-            this.startTraining_button.Name = "startTraining_button";
-            this.startTraining_button.Size = new System.Drawing.Size(98, 23);
-            this.startTraining_button.TabIndex = 0;
-            this.startTraining_button.Text = "Start Training";
-            this.startTraining_button.UseVisualStyleBackColor = true;
-            this.startTraining_button.Click += new System.EventHandler(this.startTraining_button_Click);
-            // 
-            // basicSRfolder_label
-            // 
-            this.basicSRfolder_label.AutoSize = true;
-            this.basicSRfolder_label.Location = new System.Drawing.Point(8, 17);
-            this.basicSRfolder_label.Name = "basicSRfolder_label";
-            this.basicSRfolder_label.Size = new System.Drawing.Size(83, 13);
-            this.basicSRfolder_label.TabIndex = 1;
-            this.basicSRfolder_label.Text = "BasicSR Folder:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(98, 14);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(439, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(543, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 20);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.changePath_button_Click);
             // 
             // MainForm
             // 
@@ -3545,9 +3547,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageInterpolation_trackBar)).EndInit();
-            this.treeView_contextMenuStrip.ResumeLayout(false);
             this.train_tabPage.ResumeLayout(false);
             this.train_tabPage.PerformLayout();
+            this.treeView_contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3807,7 +3809,7 @@
         private System.Windows.Forms.Button startTraining_button;
         private System.Windows.Forms.TabPage train_tabPage;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox basicSRfolder_textBox;
         private System.Windows.Forms.Label basicSRfolder_label;
     }
 }
