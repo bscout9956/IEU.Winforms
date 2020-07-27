@@ -283,6 +283,11 @@ namespace ImageEnhancingUtility.Winforms
             this.refreshModelList = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
+            this.train_tabPage = new System.Windows.Forms.TabPage();
+            this.startTraining_button = new System.Windows.Forms.Button();
+            this.basicSRfolder_label = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.main_tabPage.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -350,6 +355,7 @@ namespace ImageEnhancingUtility.Winforms
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageInterpolation_trackBar)).BeginInit();
             this.treeView_contextMenuStrip.SuspendLayout();
+            this.train_tabPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // upscale_button
@@ -418,6 +424,7 @@ namespace ImageEnhancingUtility.Winforms
             this.tabControl1.Controls.Add(this.advanced_tabPage);
             this.tabControl1.Controls.Add(this.interpolation_tabPage);
             this.tabControl1.Controls.Add(this.overlayResults_tabPage);
+            this.tabControl1.Controls.Add(this.train_tabPage);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ItemSize = new System.Drawing.Size(100, 21);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -552,6 +559,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             // profilesMainTab_listBox
             // 
+            this.profilesMainTab_listBox.BackColor = System.Drawing.SystemColors.Window;
             this.profilesMainTab_listBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.profilesMainTab_listBox.FormattingEnabled = true;
             this.profilesMainTab_listBox.Location = new System.Drawing.Point(0, 458);
@@ -626,7 +634,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("Lucida Console", 10.25F);
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
@@ -808,7 +816,7 @@ namespace ImageEnhancingUtility.Winforms
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.84026F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.15974F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.tableLayoutPanel6.Controls.Add(this.previewUpdate_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.previewSave_button, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.button_previewSaveComparison, 0, 1);
@@ -831,7 +839,7 @@ namespace ImageEnhancingUtility.Winforms
             this.previewUpdate_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.previewUpdate_button.Location = new System.Drawing.Point(3, 3);
             this.previewUpdate_button.Name = "previewUpdate_button";
-            this.previewUpdate_button.Size = new System.Drawing.Size(102, 53);
+            this.previewUpdate_button.Size = new System.Drawing.Size(98, 53);
             this.previewUpdate_button.TabIndex = 6;
             this.previewUpdate_button.Text = "Update preview";
             this.previewUpdate_button.UseVisualStyleBackColor = true;
@@ -841,10 +849,10 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.previewSave_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSave_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSave_button.Location = new System.Drawing.Point(111, 3);
+            this.previewSave_button.Location = new System.Drawing.Point(107, 3);
             this.previewSave_button.Name = "previewSave_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSave_button, 2);
-            this.previewSave_button.Size = new System.Drawing.Size(103, 112);
+            this.previewSave_button.Size = new System.Drawing.Size(99, 112);
             this.previewSave_button.TabIndex = 6;
             this.previewSave_button.Text = "Enhance and save as png";
             this.previewSave_button.UseVisualStyleBackColor = true;
@@ -856,7 +864,7 @@ namespace ImageEnhancingUtility.Winforms
             this.button_previewSaveComparison.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_previewSaveComparison.Location = new System.Drawing.Point(3, 62);
             this.button_previewSaveComparison.Name = "button_previewSaveComparison";
-            this.button_previewSaveComparison.Size = new System.Drawing.Size(102, 53);
+            this.button_previewSaveComparison.Size = new System.Drawing.Size(98, 53);
             this.button_previewSaveComparison.TabIndex = 7;
             this.button_previewSaveComparison.Text = "Save comparison to clipboard";
             this.button_previewSaveComparison.UseVisualStyleBackColor = true;
@@ -866,7 +874,7 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.previewSaveOutputFormat_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.previewSaveOutputFormat_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(220, 3);
+            this.previewSaveOutputFormat_button.Location = new System.Drawing.Point(212, 3);
             this.previewSaveOutputFormat_button.Name = "previewSaveOutputFormat_button";
             this.tableLayoutPanel6.SetRowSpan(this.previewSaveOutputFormat_button, 2);
             this.previewSaveOutputFormat_button.Size = new System.Drawing.Size(115, 112);
@@ -879,9 +887,9 @@ namespace ImageEnhancingUtility.Winforms
             // 
             this.button_refreshModels.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_refreshModels.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_refreshModels.Location = new System.Drawing.Point(341, 3);
+            this.button_refreshModels.Location = new System.Drawing.Point(333, 3);
             this.button_refreshModels.Name = "button_refreshModels";
-            this.button_refreshModels.Size = new System.Drawing.Size(148, 53);
+            this.button_refreshModels.Size = new System.Drawing.Size(156, 53);
             this.button_refreshModels.TabIndex = 10;
             this.button_refreshModels.Text = "Refresh models";
             this.button_refreshModels.UseVisualStyleBackColor = true;
@@ -3404,6 +3412,57 @@ namespace ImageEnhancingUtility.Winforms
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Segoe UI", 9.75F);
             this.popupNotifier1.TitleText = null;
             // 
+            // train_tabPage
+            // 
+            this.train_tabPage.Controls.Add(this.button1);
+            this.train_tabPage.Controls.Add(this.textBox3);
+            this.train_tabPage.Controls.Add(this.basicSRfolder_label);
+            this.train_tabPage.Controls.Add(this.startTraining_button);
+            this.train_tabPage.Location = new System.Drawing.Point(4, 25);
+            this.train_tabPage.Name = "train_tabPage";
+            this.train_tabPage.Size = new System.Drawing.Size(996, 752);
+            this.train_tabPage.TabIndex = 7;
+            this.train_tabPage.Text = "Train";
+            this.train_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // startTraining_button
+            // 
+            this.startTraining_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.startTraining_button.Location = new System.Drawing.Point(8, 721);
+            this.startTraining_button.Name = "startTraining_button";
+            this.startTraining_button.Size = new System.Drawing.Size(98, 23);
+            this.startTraining_button.TabIndex = 0;
+            this.startTraining_button.Text = "Start Training";
+            this.startTraining_button.UseVisualStyleBackColor = true;
+            this.startTraining_button.Click += new System.EventHandler(this.startTraining_button_Click);
+            // 
+            // basicSRfolder_label
+            // 
+            this.basicSRfolder_label.AutoSize = true;
+            this.basicSRfolder_label.Location = new System.Drawing.Point(8, 17);
+            this.basicSRfolder_label.Name = "basicSRfolder_label";
+            this.basicSRfolder_label.Size = new System.Drawing.Size(83, 13);
+            this.basicSRfolder_label.TabIndex = 1;
+            this.basicSRfolder_label.Text = "BasicSR Folder:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(98, 14);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(439, 20);
+            this.textBox3.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(543, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 20);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.changePath_button_Click);
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -3519,6 +3578,8 @@ namespace ImageEnhancingUtility.Winforms
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageInterpolation_trackBar)).EndInit();
             this.treeView_contextMenuStrip.ResumeLayout(false);
+            this.train_tabPage.ResumeLayout(false);
+            this.train_tabPage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3777,6 +3838,11 @@ namespace ImageEnhancingUtility.Winforms
         private System.Windows.Forms.CheckBox useImMerge_checkBox;
         private System.Windows.Forms.Button button_refreshModels;
         private System.Windows.Forms.CheckBox darkModeCheckbox;
+        private System.Windows.Forms.TabPage train_tabPage;
+        private System.Windows.Forms.Button startTraining_button;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label basicSRfolder_label;
     }
 }
 

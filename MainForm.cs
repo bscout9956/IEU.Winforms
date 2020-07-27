@@ -1776,6 +1776,11 @@ namespace ImageEnhancingUtility.Winforms
                 tableLayoutPanel4.BackColor = Color.FromArgb(64, 64, 64);
                 tableLayoutPanel5.BackColor = Color.FromArgb(64, 64, 64);
                 tableLayoutPanel6.BackColor = Color.FromArgb(64, 64, 64);
+                profilesMainTab_listBox.BackColor = Color.FromName("Gray");
+                outputDestinationMode_comboBox.BackColor = Color.FromName("Gray");
+                outputMode_groupBox.ForeColor = Color.FromName("Window");
+                groupBox1.ForeColor = Color.FromName("Window");
+                overwriteMode_comboBox.BackColor = Color.FromName("Gray");
                 settings_tabPage.BackColor = Color.FromArgb(64, 64, 64);
                 settingsOutputFormat_tabPage.BackColor = Color.FromArgb(64, 64, 64);                
             }
@@ -1788,10 +1793,20 @@ namespace ImageEnhancingUtility.Winforms
                 tableLayoutPanel4.BackColor = Color.FromName("Control");
                 tableLayoutPanel5.BackColor = Color.FromName("Control");
                 tableLayoutPanel6.BackColor = Color.FromName("Control");
+                outputDestinationMode_comboBox.BackColor = Color.FromName("Window");
+                outputMode_groupBox.ForeColor = Color.FromName("Black");
+                groupBox1.ForeColor = Color.FromName("Black");
+                overwriteMode_comboBox.BackColor = Color.FromName("Window");
+                profilesMainTab_listBox.BackColor = Color.FromName("Window");
                 settings_tabPage.BackColor = Color.FromName("Control");           
                 settingsOutputFormat_tabPage.BackColor = Color.FromName("Control");
                 
             }
+        }
+
+        private void startTraining_button_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void RulePriority_numericUpDown_ValueChanged(object sender, EventArgs e)
