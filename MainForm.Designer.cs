@@ -286,7 +286,7 @@
             this.refreshModelList = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.basicSRdatasetsFolder_textBox = new System.Windows.Forms.TextBox();
             this.basicSRdatasetsFolder_label = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
@@ -3353,7 +3353,7 @@
             // 
             this.train_tabPage.Controls.Add(this.button1);
             this.train_tabPage.Controls.Add(this.basicSRdatasetsFolder_label);
-            this.train_tabPage.Controls.Add(this.textBox3);
+            this.train_tabPage.Controls.Add(this.basicSRdatasetsFolder_textBox);
             this.train_tabPage.Controls.Add(this.basicSRfolder_button);
             this.train_tabPage.Controls.Add(this.basicSRfolder_textBox);
             this.train_tabPage.Controls.Add(this.basicSRfolder_label);
@@ -3440,14 +3440,14 @@
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Segoe UI", 9.75F);
             this.popupNotifier1.TitleText = null;
             // 
-            // textBox3
+            // basicSRdatasetsFolder_textBox
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(98, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(439, 20);
-            this.textBox3.TabIndex = 4;
+            this.basicSRdatasetsFolder_textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.basicSRdatasetsFolder_textBox.Location = new System.Drawing.Point(98, 40);
+            this.basicSRdatasetsFolder_textBox.Name = "basicSRdatasetsFolder_textBox";
+            this.basicSRdatasetsFolder_textBox.ReadOnly = true;
+            this.basicSRdatasetsFolder_textBox.Size = new System.Drawing.Size(439, 20);
+            this.basicSRdatasetsFolder_textBox.TabIndex = 4;
             // 
             // basicSRdatasetsFolder_label
             // 
@@ -3848,7 +3848,7 @@
         private System.Windows.Forms.Label basicSRfolder_label;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label basicSRdatasetsFolder_label;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox basicSRdatasetsFolder_textBox;
     }
 }
 
